@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "src/storage",
+    "src/query_engine",
+]
+
+[workspace.package]
+edition = "2021"
