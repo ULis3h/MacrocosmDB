@@ -2,6 +2,7 @@
 members = [
     "src/storage",
     "src/query_engine",
+    "src/tools",
 ]
 
 [workspace.package]
