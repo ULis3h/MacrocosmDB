@@ -239,7 +239,7 @@ impl<'a> Tokenizer<'a>{
             Some(&ch) => match ch {
                 ' ' => self.consume_and_return(chars, Token::Whitespace(Whitespace::Space)),         
                 '0' ..='9' | '.' => {
-                    let mut s = peeking_take_while(chars, |ch| ch.is_ascii_digit());
+                    let  s = peeking_take_while(chars, |ch| ch.is_ascii_digit());
                     
                     if s == "0" && chars.peek() == Some(&'x'){
                         chars.next();
