@@ -53,6 +53,9 @@ struct Level{
     sst : Vec<SSTable>,
 }
 
+
+/// Sorted String Table.
+/// It is immutable in this version.
 struct SSTable{
     file   : File,
     offset : u64,
@@ -79,7 +82,7 @@ impl SSTable {
 
 #[derive(Debug, Clone)]
 struct MemTable{
-    inner : Vec<Point>,
+    inner     : Vec<Point>,
     threshold : usize,
 }
 
@@ -97,20 +100,7 @@ impl MemTable{
 
     fn get(&self, key : String) -> Option<Point>{
         // because data is sorted, use binary.
-        let mut left = 0;
-        let mut right = self.inner.len() - 1;
 
-        while left < right {
-            let mid = (left + right) / 2;
-
-            if self.inner[mid].timestamp == key { 
-                return Some(self.inner[mid].clone());
-            }else if self.inner[mid].timestamp < key{
-                left = mid + 1;
-            }else {
-                right = mid - 1;
-            }
-        }
         None
     }
 
