@@ -6,17 +6,21 @@ use crate::timestamp;
 
 
 /// A data point
+#[derive(Debug, Clone)]
 pub struct Point{
-    timestamp  : String,
-    metric     : Metric,
-    datasource : Datasource,
+    pub timestamp  : String,
+    pub metric     : Metric,
+    pub datasource : Datasource,
 }
 
+/// map represents the dimension and its value.
+#[derive(Debug, Clone)]
 pub struct Metric{
-    degree : HashMap<String, String>
+    degree : HashMap<String, String>,
 }
 
 /// Datasource include some tags.
+#[derive(Debug, Clone)]
 pub struct Datasource{
     tags : HashMap<String, String>,
 }
