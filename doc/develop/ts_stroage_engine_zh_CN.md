@@ -10,3 +10,6 @@ A very important technical point in the technical system of time series database
 
 ## 内存表数据结构
 ![](../res/mem_table.png)  
+
+## 时序数据存储  
+表不是直接使用`create`语句进行创建的，是在数据插入时直接创建的。

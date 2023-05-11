@@ -10,3 +10,4 @@ edition = "2021"
 compress_type = []
 
 [dependencies]
+skiplist = "0.5.1"

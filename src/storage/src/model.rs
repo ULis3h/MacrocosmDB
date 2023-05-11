@@ -6,6 +6,8 @@ use crate::timestamp;
 
 
 /// A series point
+/// After the line protocol is parsed, 
+/// a slice of this structure should be returned
 #[derive(Debug, Clone)]
 pub struct Point{
     pub metric     : Metric,
