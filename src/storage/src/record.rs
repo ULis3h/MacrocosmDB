@@ -4,7 +4,7 @@ use std::collections::LinkedList;
 use super::field::{Field, Timestamp};
 
 
-/// fields的
+/// fields
 pub struct Record{
     fields    : LinkedList<Field>, 
 }
