@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MacrocosmDB DashBoard</title>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>MacrocosmDB DashBoard:</h1>
+        <div id="rust-data"></div>
+
+        <button id="exec">Button 1</button>
+        <button id="display">Button 2</button>
+
+        <script>
+            window.onload = function() {
+                fetch('/data')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('rust-data').innerText = JSON.stringify(data);
+                    });
+            };
+        </script>
+    </body>
+</html>
