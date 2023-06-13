@@ -1,5 +1,6 @@
 [workspace]
 members = [
+    "dashboard",
     "src/storage",
     "src/query_engine",
     "src/tools",

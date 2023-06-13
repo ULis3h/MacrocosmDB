@@ -1,0 +1,10 @@
+/*
+!/.gitignore
+!/.gitattributes
+!/Cargo.toml
+!/config
+!/query_engine
+!/doc
+!/storage
+!/tools
+!/README.md
