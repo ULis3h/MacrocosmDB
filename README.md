@@ -15,7 +15,9 @@
 MacrocosmDB is a super fusion database written with rust.    
 ## Documents
 ### Documentation about the design
-- time series stroage design. [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)
+- time series stroage design. [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)  
+- time series engine design. [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)  
+- relation engine design.  [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)  
 
 ## Build
 
@@ -24,4 +26,14 @@ MacrocosmDB is a super fusion database written with rust.
 ```bash
 git clone https://github.com/ULis3h/MacrocosmDB
 cd MacrocosmDB
+```
+
+### build  
+```bash
+cargo build  
+```
+
+### test  
+```
+cargo test  
 ```
