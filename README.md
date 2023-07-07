@@ -5,8 +5,7 @@
 </p>  
 
 ## Overview
-MacrocosmDB is a super fusion database written with rust. 
-![xxx](https://app.travis-ci.com/github/ULis3h/MacrocosmDB)
+MacrocosmDB is a super fusion database written with rust.    
 ## Documents
 ### Documentation about the design
 - time series stroage design. [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)
