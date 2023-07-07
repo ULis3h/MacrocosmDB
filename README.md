@@ -1,5 +1,5 @@
 <h1 align<h1 align="left">MacrocosmDB </h1>
-<img src="https://app.travis-ci.com/ULis3h/MacrocosmDB.svg?branch=main" /> <img src="https://img.shields.io/github/stars/:user/:repo" />
+<img src="https://app.travis-ci.com/ULis3h/MacrocosmDB.svg?branch=main" /> <img src="https://img.shields.io/github/stars/ULis3h/MacrocosmDB" />
 <p align="left">
     <img width="800" src="doc/res/front.png">
 </p>  
