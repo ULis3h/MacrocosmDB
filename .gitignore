@@ -1,7 +1,7 @@
 /*
 !/.gitignore
 !/.gitattributes
-!/.travis.yaml
+!/.travis.yml
 !/Cargo.toml
 !/config
 !/query_engine
