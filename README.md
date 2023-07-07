@@ -1,8 +1,14 @@
-<h1 align<h1 align="left">MacrocosmDB </h1>
-<img src="https://app.travis-ci.com/ULis3h/MacrocosmDB.svg?branch=main" img src="https://img.shields.io/github/stars/ULis3h/MacrocosmDB" />
-<p align="left">
-    <img width="800" src="doc/res/front.png">
-</p>  
+# MacrocosmDB
+
+<span style="display: inline-block;">
+  <img src="https://app.travis-ci.com/ULis3h/MacrocosmDB.svg?branch=main" alt="Travis CI Build Status">
+</span>
+
+<span style="display: inline-block;">
+  <img src="https://img.shields.io/github/stars/ULis3h/MacrocosmDB" alt="GitHub Stars">
+</span>
+
+![Front Image](doc/res/front.png){width=800}
 
 
 ## Overview
