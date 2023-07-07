@@ -11,3 +11,4 @@ compress_type = []
 
 [dependencies]
 skiplist = "0.5.1"
+util = { path = "../util"}

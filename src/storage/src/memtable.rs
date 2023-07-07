@@ -58,10 +58,9 @@ fn linkedlist_to_vec<T: Clone>(list: LinkedList<T>) -> Vec<T> {
     
 // }
 
-trait MemStroage{
+pub trait MemStroage{
 
     fn insert(&mut self, timestamp : Field, values : Vec<Field>, ins : RecInstruct) -> usize;
-
 
     fn get(&self, timestamp : &Field) -> Option<&(Vec<Field>, RecInstruct)>;
 
@@ -98,7 +97,7 @@ impl MemStroage for SkipMap<Field, (Vec<Field>, RecInstruct)>{
     }
 }
 
-struct MemTable_<T>{
+pub struct MemTable_<T>{
     store           : T    ,
     threshold_front : usize, 
     threshold_end   : usize,  
