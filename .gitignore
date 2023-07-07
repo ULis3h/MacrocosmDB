@@ -3,11 +3,7 @@
 !/.gitattributes
 !/.travis.yml
 !/Cargo.toml
-!/config
-!/query_engine
+!/src
 !/doc
-!/storage
-!/tools
 !/dashboard
-!/util
 !/README.md
