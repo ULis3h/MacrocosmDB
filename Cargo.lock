@@ -974,6 +974,7 @@ name = "storage"
 version = "0.1.0"
 dependencies = [
  "skiplist",
+ "util",
 ]
 
 [[package]]
@@ -1142,6 +1143,10 @@ dependencies = [
  "idna",
  "percent-encoding",
 ]
+
+[[package]]
+name = "util"
+version = "0.1.0"
 
 [[package]]
 name = "version_check"

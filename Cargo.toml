@@ -4,6 +4,7 @@ members = [
     "src/storage",
     "src/query_engine",
     "src/tools",
+    "src/util",
 ]
 
 [workspace.package]
