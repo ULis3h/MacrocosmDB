@@ -7,42 +7,27 @@ pub type Timestamp = u64;
 pub enum Field {
   I64(i64),
   // F64(f64),
-  TimeStamp(Timestamp)
+  TimeStamp(Timestamp),
 }
 
-impl Field{
+impl Field {
   #[inline]
-  fn serialize(&self)-> Vec<u8>
-  {
+  fn serialize(&self) -> Vec<u8> {
     todo!()
   }
 
   #[inline]
-  fn serialize_into(&self, dst: &mut[u8])->usize
-  {
+  fn serialize_into(&self, dst: &mut [u8]) -> usize {
     todo!()
   }
 
   #[inline]
-  fn deserialize_from(&mut self, src: &[u8])->usize
-  {
+  fn deserialize_from(&mut self, src: &[u8]) -> usize {
     todo!()
   }
 
   #[inline]
-  fn deserialize(src: &[u8])->(usize,Self)
-  {
+  fn deserialize(src: &[u8]) -> (usize, Self) {
     todo!()
   }
 }
-
-
-
-
-
-
-
-
-
-
-

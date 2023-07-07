@@ -2,9 +2,9 @@
 use std::time::Duration;
 
 #[derive(Debug, Clone)]
-pub enum TimeStampPrecision{
-    Nanoseconds, 
-    Microseconds,
-    Milliseconds,
-    Seconds,
+pub enum TimeStampPrecision {
+  Nanoseconds,
+  Microseconds,
+  Milliseconds,
+  Seconds,
 }
