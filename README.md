@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/stars/ULis3h/MacrocosmDB" alt="GitHub Stars">
 </span>
 
-![Front Image](doc/res/front.png){width=800}
+![Front Image](doc/res/front.png)
 
 
 ## Overview
