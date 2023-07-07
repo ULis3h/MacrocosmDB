@@ -10,14 +10,15 @@
 
 ![Front Image](doc/res/front.png)
 
+Engish |  [简体中文](README_zhCN.md)  
 
 ## Overview
 MacrocosmDB is a super fusion database written with rust.    
 ## Documents
 ### Documentation about the design
-- time series stroage design. [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)  
-- time series engine design. [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)  
-- relation engine design.  [English](doc/develop/ts_storage_engine.md) | [简体中文](doc/develop/ts_stroage_engine_zhCN.md)  
+- [time series stroage design.](doc/develop/ts_storage_engine.md)
+- [time series engine design.](doc/develop/ts_storage_engine.md) 
+- [relation engine design.](doc/develop/ts_storage_engine.md) 
 
 ## Build
 
