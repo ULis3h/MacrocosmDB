@@ -1,5 +1,7 @@
 <h1 align<h1 align="left">MacrocosmDB </h1>
-<img src="https://img.shields.io/badge/build-pass-blue" /> <img src="https://img.shields.io/badge/stars-2-green">
+<img src="http://img.shields.io/travis/「ULis3h}/{MacrocosmDB}.svg" />
+[![](https://user-gold-cdn.xitu.io/2017/12/13/1604ec3c62a7de14)](https://app.travis-ci.com/github/ULis3h/MacrocosmDB)
+
 <p align="left">
     <img width="800" src="doc/res/front.png">
 </p>  
