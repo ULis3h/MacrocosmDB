@@ -6,3 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+[dependencies.stm32f7]
+version = "0.15.1"
+features = ["stm32f767"]

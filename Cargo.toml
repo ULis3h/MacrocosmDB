@@ -5,7 +5,9 @@ members = [
     "src/query_engine",
     "src/tools",
     "src/util",
+    "src/embedded",
 ]
+resolver = "2"
 
 [workspace.package]
 edition = "2021"
