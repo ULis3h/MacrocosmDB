@@ -1,12 +1,19 @@
 [workspace]
+resolver = "2"
+
 members = [
-    "dashboard",
-    "src/storage",
-    "src/query_engine",
-    "src/tools",
-    "src/util",
+    # "dashboard",
+    # "src/storage",
+    # "src/query_engine",
+    # "src/tools",
+    # "src/util",
     "src/embedded",
 ]
-
+# target = "thumbv7m-none-eabi"
 [workspace.package]
 edition = "2021"
+
+[profile.release]
+codegen-units = 1 # better optimizations
+debug = false # symbols are nice and they don't increase the size on Flash
+lto = true # better optimizations
