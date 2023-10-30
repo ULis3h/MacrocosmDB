@@ -2,5 +2,10 @@ language: rust
 before_script:
 - rustup component add rustfmt
 script:
-- cargo build
+# x86
+- cargo build --package=dashboard --package=storage --package=query_engine --package=tools --package=util
 - cargo test
+# arm
+## arm-m
+## arm-a
+# sparc(big-end)

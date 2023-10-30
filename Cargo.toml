@@ -7,7 +7,6 @@ members = [
     "src/util",
     "src/embedded",
 ]
-resolver = "2"
 
 [workspace.package]
 edition = "2021"
