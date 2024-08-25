@@ -3,7 +3,7 @@ resolver = "2"
 
 members = [
     # "dashboard",
-    # "src/storage",
+    "src/storage",
     # "src/query_engine",
     # "src/tools",
     # "src/util",

@@ -6,3 +6,4 @@ pub mod model;
 pub mod record;
 pub mod timestamp;
 pub mod wal;
+pub mod btree;

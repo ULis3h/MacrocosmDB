@@ -1,4 +1,4 @@
 /// cache line size.
-pub const cache_line_size: u32 = 64;
+pub const CACHE_LINE_SIZE: u32 = 64;
 
 pub struct BwTree {}
