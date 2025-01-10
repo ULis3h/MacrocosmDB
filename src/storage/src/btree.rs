@@ -25,8 +25,6 @@
  * Description: Brief description of what this file is for.
  */
 
-use std::cmp::Ordering;
-
 enum Node<K, V> {
     Internal(InternalNode<K, V>),
     Leaf(LeafNode<K, V>),
@@ -60,18 +58,53 @@ impl<K: Ord + Clone, V> BPTree<K, V> {
 
     // Insert a key-value pair
     pub fn insert(&mut self, key: K, value: V) {
-        // TODO: Implement insertion logic
+        if self.root.is_none() {
+            let mut leaf = LeafNode {
+                keys: vec![key],
+                values: vec![value],
+                next: None,
+            };
+            self.root = Some(Box::new(Node::Leaf(leaf)));
+        }
+        // More complex insertion logic will be implemented later
     }
 
     // Get the value associated with a key
     pub fn get(&self, key: &K) -> Option<&V> {
-        // TODO: Implement search logic
-        None
+        match &self.root {
+            Some(node) => {
+                match &**node {
+                    Node::Leaf(leaf) => {
+                        if let Some(pos) = leaf.keys.iter().position(|k| k == key) {
+                            Some(&leaf.values[pos])
+                        } else {
+                            None
+                        }
+                    }
+                    Node::Internal(_) => None, // Will be implemented later
+                }
+            }
+            None => None,
+        }
     }
 
     // Delete a key-value pair
     pub fn delete(&mut self, key: &K) {
-        // TODO: Implement deletion logic
+        if let Some(node) = &mut self.root {
+            if self.order < 2 {
+                return; // Invalid order
+            }
+            // Basic deletion logic - more complex logic will be implemented later
+            match &mut **node {
+                Node::Leaf(leaf) => {
+                    if let Some(pos) = leaf.keys.iter().position(|k| k == key) {
+                        leaf.keys.remove(pos);
+                        leaf.values.remove(pos);
+                    }
+                }
+                Node::Internal(_) => {} // Will be implemented later
+            }
+        }
     }
 }
 
